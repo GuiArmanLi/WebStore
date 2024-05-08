@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Product Page";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@model Produtos.Models.ProductViewModel
+
+@if (Model is not null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Describe</th>
+                <th scope="col">Price</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.Products)
+            {
+                <tr>
+                    <form asp-controller="Product" asp-action="Update" method="post">
+                        <th scope="row"><input class="form-control" type="text" value="@product.Id" readonly /></th>
+                        <td><input class="form-control" type="text" value="@product.Name" name="Name" /></td>
+                        <td><input class="form-control" type="text" value="@product.Describe" name="Describe" /></td>
+                        <td><input class="form-control" type="number" value="@product.Price" name="Price" /></td>
+                        <td><button class="btn btn-primary" type="submit">Update</button></td>
+                        <input type="hidden" name="Id" value="@product.Id" />
+                    </form>
+                    <td>
+                        <a asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id"
+                            class="btn btn-primary">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>There no product to show, create one by click <a asp-controller="Product" asp-action="Create">here</a></p>
+}

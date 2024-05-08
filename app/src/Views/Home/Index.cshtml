@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Produtos.Models.ProductModel
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to the products's controller</h1>
+
+    <div>
+        <a class="btn btn-primary" asp-controller="Product" asp-action="GetAll">GetAll</a>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">Create</button>
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Create Your New Product</h1>
+                    </div>
+                    <form asp-controller="Product" asp-action="Create" method="post">
+                        <div class="modal-body">
+
+                            <div class="d-flex flex-column input-group mb-3">
+                                <div>
+                                    <input type="text" asp-for="Name" class="form-control" id="name" placeholder="Name"
+                                        required>
+                                </div>
+                                <div>
+                                    <input type="text" asp-for="Describe" class="form-control" id="describe"
+                                        placeholder="Describe" required>
+                                </div>
+                                <div>
+                                    <input type="number" asp-for="Price" class="form-control" id="price"
+                                        placeholder="Price" required>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Create</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>

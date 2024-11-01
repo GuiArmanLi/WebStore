@@ -1,0 +1,10 @@
+C:\Users\guilh\OneDrive\Anexos\Área de Trabalho\GitHub\store\app\API\obj\Debug\net8.0\API.csproj.AssemblyReference.cache
+C:\Users\guilh\OneDrive\Anexos\Área de Trabalho\GitHub\store\app\API\obj\Debug\net8.0\API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guilh\OneDrive\Anexos\Área de Trabalho\GitHub\store\app\API\obj\Debug\net8.0\API.AssemblyInfoInputs.cache
+C:\Users\guilh\OneDrive\Anexos\Área de Trabalho\GitHub\store\app\API\obj\Debug\net8.0\API.AssemblyInfo.cs
+C:\Users\guilh\OneDrive\Anexos\Área de Trabalho\GitHub\store\app\API\obj\Debug\net8.0\API.csproj.CoreCompileInputs.cache
+C:\Users\guilh\OneDrive\Anexos\Área de Trabalho\GitHub\store\app\API\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\guilh\OneDrive\Anexos\Área de Trabalho\GitHub\store\app\API\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\guilh\OneDrive\Anexos\Área de Trabalho\GitHub\store\app\API\obj\Debug\net8.0\API.RazorAssemblyInfo.cache
+C:\Users\guilh\OneDrive\Anexos\Área de Trabalho\GitHub\store\app\API\obj\Debug\net8.0\API.RazorAssemblyInfo.cs
+C:\Users\guilh\OneDrive\Anexos\Área de Trabalho\GitHub\store\app\API\obj\Debug\net8.0\API.sourcelink.json
